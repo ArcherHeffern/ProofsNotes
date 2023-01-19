@@ -22,6 +22,25 @@ Sets can also be infinite, for example the set of all even numbers can be repres
 \end{align*}
 }
 
+% Special types of sets:
+\dfn{Special Sets}{
+
+The \textbf{Integer Set} is a set with only integers. It is represented as \begin{align*}
+	\mathbb{Z}\text{ = \{ Integers \} = \{ -4, 0, 6, 100 \}}\end{align*}
+
+The \textbf{Natural Number Set} is a set that contains all while numbers greater than 0. It is represented as \begin{align*}
+	\mathbb{N}\text{ = \{Natural Numbers\} = \{ 1, 2, 3, 485 \}}\end{align*}
+
+The \textbf{Real Number Set} is a set that contains all real numbers. It is represented as \begin{align*}
+	\mathbb{R}\text{ = \{Real Numbers\} = \{ 1.5, 2.3, 3.4, 485.1 \}}\end{align*}
+
+The \textbf{Rational Number Set} is a set that contains all rational numbers. It is represented as \begin{align*}
+	\mathbb{Q}\text{ = \{Rational Numbers\} = \{ 1, 2, 3, 485 \}}\end{align*}
+
+The \textbf{Empty Set} is a set with no elements. It is represented as \begin{align*}
+	\varnothing\text{ = \{ \}}\end{align*}
+}
+
 
 % Set Terminology
 \dfn{Subsets and Elements of}{A \textbf{Subset} of a set S is a set that is contained in S. For example, the set of all countries in Europe is a subset of the set of all countries in the world. If S is a subset of T, then we say\begin{align*}
@@ -32,11 +51,10 @@ an \textbf{element of} a set is an object that is contained in the set. If x is 
 	{x \in S}\end{align*}
 	If x is not an element of set S, then we say\begin{align*}
 		{x \notin S}\end{align*}
-		examples:
-		\begin{align*}
-			Given\ {S = \{\text{All countries in europe}\} = \{\text{France, Germany..}\}}\ and\end{align*}
-			\begin{align*}
-			{T = \{\text{All countries in the world}\} = \{\text{France, Germany, China, USA..}\}}\end{align*}
+		}
+		\ex{Subsets and Elements of}{
+			Given\ {S = \{\text{All countries in europe}\} = \{\text{France, Germany..}\}}\ and\\
+			{T = \{\text{All countries in the world}\} = \{\text{France, Germany, China, USA..}\}}
 			\begin{align*}
 			{S \subseteq T}\end{align*}
 			\begin{align*}
@@ -45,11 +63,14 @@ an \textbf{element of} a set is an object that is contained in the set. If x is 
 			{France \in S}\end{align*}
 			\begin{align*}
 			{China \in T}\end{align*}
-			\begin{align*}
-			{China \notin S}\end{align*}
-			\begin{align*}
-			{France \in T}\end{align*}
 		}
+		\qs{}{Find all subsets of \{ 2, 5, 8 \}}
+		\sol \begin{align*}
+			\{\emptyset, \{2\}, \{5\}, \{8\}, \{2, 5\}, \{2, 8\}, \{5, 8\}, \{2, 5, 8\}\}\end{align*}
+		\qs{}{If A has N elements, how many subsets does it have?}
+		\sol \begin{align*}
+			2^N\end{align*}
+
 			
 			% Set Operations
 			\dfn{Set Operations}{Set operations are operations that can be performed on sets. The most common set operations are union, intersection, and difference.
@@ -66,7 +87,7 @@ an \textbf{element of} a set is an object that is contained in the set. If x is 
 		\dfn{Complement of a Set}{The complement of a set is the set of all elements that are not in the set. For example, the complement of the set of all countries in Europe is the set of all countries that are not in Europe. It is represented as \begin{align*}
 			{{S^c}}\end{align*}
 			Something to keep note of, is that the complement of a set is the same as the difference of the set and the universal set. For example, the complement of the set of all countries in Europe is the same as the difference of the set of all countries in Europe and the set of all countries in the world. It is represented as \begin{align*}
-				{S^c = S \setminus T}\end{align*}
+				{S^c = S \setminus U}\end{align*}
 			}
 
 		% Set Notation
@@ -91,24 +112,5 @@ an \textbf{element of} a set is an object that is contained in the set. If x is 
 			is represented as \begin{align*}
 				|S|\end{align*}
 			}
-
-	% Special types of sets:
-		\dfn{Special Sets}{
-
-		The \textbf{Integer Set} is a set with only integers. It is represented as \begin{align*}
-			\mathbb{Z}\text{ = \{ Integers \} = \{ -4, 0, 6, 100 \}}\end{align*}
-
-		The \textbf{Natural Number Set} is a set that contains all while numbers greater than 0. It is represented as \begin{align*}
-			\mathbb{N}\text{ = \{Natural Numbers\} = \{ 1, 2, 3, 485 \}}\end{align*}
-
-		The \textbf{Real Number Set} is a set that contains all real numbers. It is represented as \begin{align*}
-			\mathbb{R}\text{ = \{Real Numbers\} = \{ 1.5, 2.3, 3.4, 485.1 \}}\end{align*}
-
-		The \textbf{Rational Number Set} is a set that contains all rational numbers. It is represented as \begin{align*}
-			\mathbb{Q}\text{ = \{Rational Numbers\} = \{ 1, 2, 3, 485 \}}\end{align*}
-
-		The \textbf{Empty Set} is a set with no elements. It is represented as \begin{align*}
-			\varnothing\text{ = \{ \}}\end{align*}
-		}
 \pagebreak
 \end{document}
