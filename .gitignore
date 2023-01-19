@@ -4,7 +4,7 @@
 # Except the following
 !.gitignore
 !macros.tex
-!template.tex
+!Notes.tex
 !template.pdf
 !preamble.tex
 !letterfonts.tex
