@@ -1,0 +1,114 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Math 23b}\\A Discrete Transition to Advanced Mathematics}
+\author{\huge{Archer Heffern}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\chapter{Sets and Logic}
+\section{Introducton to Sets and Set Operations}
+\dfn{Set}{A set is an orderless collection of objects, objects are called elements of the set. We say \begin{align*}
+\text{S = \{All countries in europe\} = \{France, Germany..\}}\end{align*}
+Sets can also be infinite, for example the set of all even numbers can be represented as \begin{align*}
+	\text{T = \{even natural numbers\} = \{2, 4, 6, 8..\}}
+\end{align*}
+}
+
+
+% Set Terminology
+\dfn{Subsets and Elements of}{A \textbf{Subset} of a set S is a set that is contained in S. For example, the set of all countries in Europe is a subset of the set of all countries in the world. If S is a subset of T, then we say\begin{align*}
+	{S \subseteq T}\end{align*}
+	If S is not a subset of T, then we say\begin{align*}
+		{S \not\subseteq T}\end{align*}
+an \textbf{element of} a set is an object that is contained in the set. If x is an element of set S, then we say\begin{align*}
+	{x \in S}\end{align*}
+	If x is not an element of set S, then we say\begin{align*}
+		{x \notin S}\end{align*}
+		examples:
+		\begin{align*}
+			Given\ {S = \{\text{All countries in europe}\} = \{\text{France, Germany..}\}}\ and\end{align*}
+			\begin{align*}
+			{T = \{\text{All countries in the world}\} = \{\text{France, Germany, China, USA..}\}}\end{align*}
+			\begin{align*}
+			{S \subseteq T}\end{align*}
+			\begin{align*}
+			{T \not\subseteq S}\end{align*}
+			\begin{align*}
+			{France \in S}\end{align*}
+			\begin{align*}
+			{China \in T}\end{align*}
+			\begin{align*}
+			{China \notin S}\end{align*}
+			\begin{align*}
+			{France \in T}\end{align*}
+		}
+			
+			% Set Operations
+			\dfn{Set Operations}{Set operations are operations that can be performed on sets. The most common set operations are union, intersection, and difference.
+			\begin{itemize}
+				\item \textbf{Union} is the operation of combining two sets. For example, the union of the set of all countries in Europe and the set of all countries in Asia is the set of all countries in Europe and Asia. It is represented as \begin{align*}
+					{S \cup T} = \{ x\ |\ x\in S\ or\ x\in T \}\end{align*}
+				\item \textbf{Intersection} is the operation of finding the common elements of two sets. For example, the intersection of the set of all countries in Europe and the set of all countries in Asia is the set of all countries that are in both Europe and Asia. It is represented as \begin{align*}
+					{S \cap T} = \{ x\ |\ x\ \in S\ and\ x\in T\}\end{align*}
+				\item \textbf{Difference} is the operation of finding the elements that are in one set but not the other. For example, the difference of the set of all countries in Europe and the set of all countries in Asia is the set of all countries that are in Europe but not Asia. It is represented as \begin{align*}
+					{S \setminus T}\end{align*}
+			\end{itemize}
+			}
+		%complement of a set
+		\dfn{Complement of a Set}{The complement of a set is the set of all elements that are not in the set. For example, the complement of the set of all countries in Europe is the set of all countries that are not in Europe. It is represented as \begin{align*}
+			{{S^c}}\end{align*}
+			Something to keep note of, is that the complement of a set is the same as the difference of the set and the universal set. For example, the complement of the set of all countries in Europe is the same as the difference of the set of all countries in Europe and the set of all countries in the world. It is represented as \begin{align*}
+				{S^c = S \setminus T}\end{align*}
+			}
+
+		% Set Notation
+		\dfn{Set Notation}{Set notation is a way of representing sets in a compact way. The most common set notation is the set builder notation. For example, the set of all even numbers can be represented as \begin{align*}
+			\{x \in \mathbb{N} \mid x \text{ is even}\}\end{align*}
+			}
+			
+			% Set Properties
+			\dfn{Set Properties}{Set properties are properties that are true for all sets. The most common set properties are the commutative, associative, and distributive properties.
+			\begin{itemize}
+				\item \textbf{Commutative} is the property of a set operation that the order of the sets does not matter. For example, the union of the set of all countries in Europe and the set of all countries in Asia is the same as the union of the set of all countries in Asia and the set of all countries in Europe. It is represented as \begin{align*}
+					{S \cup T = T \cup S}\end{align*}
+				\item \textbf{Associative} is the property of a set operation that the order of the sets does not matter. For example, the union of the set of all countries in Europe and the set of all countries in Asia is the same as the union of the set of all countries in Asia and the set of all countries in Europe. It is represented as \begin{align*}
+					{S \cup T = T \cup S}\end{align*}
+				\item \textbf{Distributive} is the property of a set operation that the order of the sets does not matter. For example, the union of the set of all countries in Europe and the set of all countries in Asia is the same as the union of the set of all countries in Asia and the set of all countries in Europe. It is represented as \begin{align*}
+					{S \cup T = T \cup S}\end{align*}
+			\end{itemize}
+			}
+			
+			% Set Cardinality
+			\dfn{Set Cardinality}{Set cardinality is the number of elements in a set. For example, the set of all countries in Europe has a cardinality of 50. It
+			is represented as \begin{align*}
+				|S|\end{align*}
+			}
+
+	% Special types of sets:
+		\dfn{Special Sets}{
+
+		The \textbf{Integer Set} is a set with only integers. It is represented as \begin{align*}
+			\mathbb{Z}\text{ = \{ Integers \} = \{ -4, 0, 6, 100 \}}\end{align*}
+
+		The \textbf{Natural Number Set} is a set that contains all while numbers greater than 0. It is represented as \begin{align*}
+			\mathbb{N}\text{ = \{Natural Numbers\} = \{ 1, 2, 3, 485 \}}\end{align*}
+
+		The \textbf{Real Number Set} is a set that contains all real numbers. It is represented as \begin{align*}
+			\mathbb{R}\text{ = \{Real Numbers\} = \{ 1.5, 2.3, 3.4, 485.1 \}}\end{align*}
+
+		The \textbf{Rational Number Set} is a set that contains all rational numbers. It is represented as \begin{align*}
+			\mathbb{Q}\text{ = \{Rational Numbers\} = \{ 1, 2, 3, 485 \}}\end{align*}
+
+		The \textbf{Empty Set} is a set with no elements. It is represented as \begin{align*}
+			\varnothing\text{ = \{ \}}\end{align*}
+		}
+\pagebreak
+\end{document}
